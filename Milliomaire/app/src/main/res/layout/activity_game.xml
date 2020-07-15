@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="סכום השאלה"
+                    android:textColor="#FFD600"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/question"
+                    android:gravity="center"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:paddingBottom="40dp"
+                    android:text="מה השם של יוחנן הסלנדר"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:textColor="#FFD600"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRetirement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/retirement"
+                android:onClick="onClickRetriement"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button5050Help"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fiftyfifty"
+                android:onClick="fiftyfiftyHelp" />
+
+            <Button
+                android:id="@+id/buttonCrowdHelp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/crowdhelp"
+                android:onClick="crowdhelpClick" />
+
+            <Button
+                android:id="@+id/buttonTelephoneHelp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/telephonehelp"
+                android:onClick="telephoneHelpClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonAnswerOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/answer"
+                android:onClick="selectAnswerOne"
+                android:paddingBottom="20dp"
+                android:text="תשובה ראשונה"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonAnswerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/answer"
+                android:onClick="selectAnswerTwo"
+                android:paddingBottom="20dp"
+                android:text="תשובה שניה"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonAnswerThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/answer"
+                android:onClick="selectAnswerThree"
+                android:paddingBottom="20dp"
+                android:text="תשובה שלישית"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonAnswerFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/answer"
+                android:onClick="selectAnswerFour"
+                android:paddingBottom="20dp"
+                android:text="תשובה רביעית"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
